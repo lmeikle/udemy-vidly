@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.Security.AccessControl;
 
 namespace Vidly.Dtos
 {
@@ -17,6 +18,8 @@ namespace Vidly.Dtos
         public bool IsSubscribedToNewsletter { get; set; }
 
         public byte MembershipTypeId { get; set; }
+
+        public MembershipTypeDto MembershipType { get; set; }
 
         public DateTime? Birthdate { get; set; }
     }
